@@ -7,7 +7,7 @@
   ```
   Count: **10000** times
 
-  Alocation: **3305** times
+  Allocation: **3305** times
 
   Took: **26.481084ms**
 
@@ -19,7 +19,7 @@
   ```
   Count: **10000** times
 
-  Alocation: **20** times
+  Allocation: **20** times
 
   Took: **432.959µs**
   
@@ -32,7 +32,7 @@
   ```
   Count: **10000** times
 
-  Alocation: **11** times
+  Allocation: **11** times
 
   Took: **460.25µs**
 
