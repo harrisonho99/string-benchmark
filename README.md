@@ -5,7 +5,9 @@
       var s String
       s +="hello" 
   ```
-  Count: **1000** times
+  Count: **10000** times
+
+  Alocation: **3305** times
 
   Took: **26.481084ms**
 
@@ -15,7 +17,9 @@
       var s strings.Builder
       s.WriteString("hello") 
   ```
-  Count: **1000** times
+  Count: **10000** times
+
+  Alocation: **20** times
 
   Took: **432.959µs**
   
@@ -26,8 +30,13 @@
       var s bytes.Buffer
       s.WriteString("hello") 
   ```
-  Count: **1000** times
+  Count: **10000** times
+
+  Alocation: **11** times
 
   Took: **460.25µs**
 
   Compare: **0.94** times slower than **strings.Builder**
+
+
+  **Test machine** :``  Go: 1.18 Macbook pro 14, Arch: ARM-64, MacOS: 12.3, ``
