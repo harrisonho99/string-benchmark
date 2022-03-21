@@ -5,7 +5,7 @@
       var s String
       s +="hello" 
   ```
-  Count: **10000** times
+  Loop count: **10000** times
 
   Allocation: **3305** times
 
@@ -17,7 +17,7 @@
       var s strings.Builder
       s.WriteString("hello") 
   ```
-  Count: **10000** times
+ Loop count: **10000** times
 
   Allocation: **20** times
 
@@ -30,7 +30,7 @@
       var s bytes.Buffer
       s.WriteString("hello") 
   ```
-  Count: **10000** times
+Loop count: **10000** times
 
   Allocation: **11** times
 
@@ -39,4 +39,4 @@
   Compare: **0.94** times slower than **strings.Builder**
 
 
-  **Test machine** :``  Go: 1.18 Macbook pro 14, Arch: ARM-64, MacOS: 12.3, ``
+  **Test machine** :`` Go: 1.18, Macbook pro 14, Arch: ARM-64, MacOS: 12.3, ``
